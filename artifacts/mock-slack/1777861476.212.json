@@ -1,0 +1,22 @@
+{
+  "ts": "1777861476.212",
+  "channel": "#hiring-panel",
+  "text": "Smaya leaderboard for run 37ba0e34-50d5-4ff8-992b-9e5dce731f66: top-3",
+  "blocks": [
+    {
+      "rank": 1,
+      "candidateId": "c01",
+      "composite": 90
+    },
+    {
+      "rank": 2,
+      "candidateId": "c06",
+      "composite": 79
+    },
+    {
+      "rank": 3,
+      "candidateId": "c04",
+      "composite": 76
+    }
+  ]
+}
