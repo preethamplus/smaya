@@ -1,0 +1,164 @@
+[
+  {
+    "id": "c01",
+    "name": "Aarav Iyer",
+    "email": "aarav.iyer@example.com",
+    "phone": "+91-98450-12345",
+    "location": "Bengaluru, India",
+    "linkedin": "linkedin.com/in/aarav-iyer",
+    "github": "github.com/aaraviyer",
+    "summary": "Senior backend engineer with 8 years building distributed systems. Owned a Temporal-based fulfillment orchestrator at scale (3M missions/day).",
+    "skills": ["TypeScript", "Python", "Temporal", "Cosmos DB", "OpenTelemetry", "Docker", "Kubernetes", "GraphQL", "MCP", "Zod"],
+    "experience": [
+      { "role": "Staff Engineer", "company": "Flipcart Logistics", "years": "2022–present", "highlights": ["Owned Temporal cluster running 3M durable workflows/day.", "Designed pre-side-effect eval gates for LLM-driven dispatch."] },
+      { "role": "Senior Engineer", "company": "Razorpay", "years": "2019–2022", "highlights": ["Built idempotent payment orchestrator (Redis + Postgres).", "Reduced p99 reconciliation drift from 8s to 200ms."] },
+      { "role": "Engineer", "company": "Freshworks", "years": "2017–2019", "highlights": ["GraphQL surface for ticket routing.", "OTel adoption across 12 services."] }
+    ],
+    "education": [{ "degree": "B.Tech CSE", "school": "IIT Madras", "year": 2017 }]
+  },
+  {
+    "id": "c02",
+    "name": "Priya Subramanian",
+    "email": "priya.s@example.com",
+    "phone": "+91-99000-22345",
+    "location": "Chennai, India",
+    "linkedin": "linkedin.com/in/priya-subramanian",
+    "github": "github.com/priyas",
+    "summary": "Applied AI engineer, 6 years. Built behavior eval harness used in production for an LLM-driven legal workflow.",
+    "skills": ["Python", "TypeScript", "LangSmith", "OpenAI", "Anthropic", "Pinecone", "Postgres", "OpenTelemetry", "Pytest", "Docker"],
+    "experience": [
+      { "role": "Senior AI Engineer", "company": "LegalDocs AI", "years": "2021–present", "highlights": ["Designed eval harness with 1.2k golden cases, drift alerts, threshold gates.", "Reduced hallucination rate from 4.1% to 0.3% over 12 months."] },
+      { "role": "Engineer", "company": "ThoughtWorks", "years": "2019–2021", "highlights": ["Pair-programmed on agentic POCs across 3 BFSI clients."] }
+    ],
+    "education": [{ "degree": "M.S. Computer Science", "school": "IIIT Hyderabad", "year": 2019 }]
+  },
+  {
+    "id": "c03",
+    "name": "Rohan Mehra",
+    "email": "rohan.mehra@example.com",
+    "phone": "+91-98101-44567",
+    "location": "Gurugram, India",
+    "linkedin": "linkedin.com/in/rohan-mehra",
+    "github": "github.com/rohanmehra",
+    "summary": "Backend engineer with 4 years experience. Strong on TypeScript and Postgres, learning agentic patterns.",
+    "skills": ["TypeScript", "Node.js", "Postgres", "Redis", "Docker", "REST", "Jest"],
+    "experience": [
+      { "role": "Engineer", "company": "Zomato", "years": "2021–present", "highlights": ["Owned restaurant onboarding service.", "Built Redis-backed rate limiter."] },
+      { "role": "Junior Engineer", "company": "Paytm", "years": "2020–2021", "highlights": ["Backend for KYC flow."] }
+    ],
+    "education": [{ "degree": "B.E. CSE", "school": "BITS Pilani", "year": 2020 }]
+  },
+  {
+    "id": "c04",
+    "name": "Krithika Rao",
+    "email": "krithika.rao@example.com",
+    "phone": "+91-94440-77890",
+    "location": "Bengaluru, India",
+    "linkedin": "linkedin.com/in/krithika-rao",
+    "github": "github.com/krithikar",
+    "summary": "Distributed systems engineer, 9 years. Built and operated AWS Step Functions and Cadence at scale; deep Cosmos DB partition-design expertise.",
+    "skills": ["TypeScript", "Python", "AWS Step Functions", "Cadence", "Cosmos DB", "DynamoDB", "Kafka", "OpenTelemetry", "Docker", "Kubernetes", "MCP"],
+    "experience": [
+      { "role": "Principal Engineer", "company": "Atlassian", "years": "2020–present", "highlights": ["Owned Cadence cluster (12M tasks/day).", "Authored partition-key migration playbook used company-wide."] },
+      { "role": "Senior Engineer", "company": "Microsoft", "years": "2017–2020", "highlights": ["Cosmos DB SDK contributor.", "Built durable retry library for Office 365."] },
+      { "role": "Engineer", "company": "Yahoo", "years": "2015–2017", "highlights": ["Worked on Hadoop ingestion."] }
+    ],
+    "education": [{ "degree": "M.Tech CSE", "school": "IISc Bangalore", "year": 2015 }]
+  },
+  {
+    "id": "c05",
+    "name": "Daniel O'Brien",
+    "email": "dan.obrien@example.com",
+    "phone": "+1-415-555-0192",
+    "location": "San Francisco, USA",
+    "linkedin": "linkedin.com/in/dan-obrien",
+    "github": "github.com/danobrien",
+    "summary": "Backend engineer, 7 years. Strong Python and Go; some TypeScript. Worked on agentic search at a YC company.",
+    "skills": ["Python", "Go", "TypeScript", "Postgres", "Redis", "Temporal", "OpenAI", "Pinecone", "Docker"],
+    "experience": [
+      { "role": "Senior Engineer", "company": "Vector.io (YC W23)", "years": "2023–present", "highlights": ["Owned agentic retrieval pipeline.", "Wrote eval harness for retrieval relevance."] },
+      { "role": "Engineer", "company": "Stripe", "years": "2018–2023", "highlights": ["Risk decisioning service.", "On-call rotation for billing."] }
+    ],
+    "education": [{ "degree": "B.S. CS", "school": "UC Berkeley", "year": 2018 }]
+  },
+  {
+    "id": "c06",
+    "name": "Meera Joshi",
+    "email": "meera.joshi@example.com",
+    "phone": "+91-99220-33456",
+    "location": "Pune, India",
+    "linkedin": "linkedin.com/in/meera-joshi",
+    "github": "github.com/meeraj",
+    "summary": "Frontend-leaning full-stack engineer, 5 years. React, Next.js, GraphQL.",
+    "skills": ["TypeScript", "React", "Next.js", "GraphQL", "Tailwind", "Postgres", "Node.js"],
+    "experience": [
+      { "role": "Engineer", "company": "Razorpay", "years": "2020–present", "highlights": ["Owned merchant dashboard.", "Designed GraphQL surface for partner APIs."] },
+      { "role": "Junior Engineer", "company": "Flipkart", "years": "2019–2020", "highlights": ["Storefront engineering."] }
+    ],
+    "education": [{ "degree": "B.Tech CSE", "school": "VJTI Mumbai", "year": 2019 }]
+  },
+  {
+    "id": "c07",
+    "name": "Vikram Shah",
+    "email": "vikram.shah@example.com",
+    "phone": "+91-90040-66789",
+    "location": "Mumbai, India",
+    "linkedin": "linkedin.com/in/vikram-shah",
+    "github": "github.com/vikrams",
+    "summary": "DevOps / SRE with 10 years experience. Some backend Python. Owned observability platforms.",
+    "skills": ["Python", "Terraform", "Kubernetes", "Prometheus", "OpenTelemetry", "Jaeger", "Docker", "AWS"],
+    "experience": [
+      { "role": "Staff SRE", "company": "Swiggy", "years": "2019–present", "highlights": ["OTel adoption across 200 services.", "On-call captain for tier-0 systems."] },
+      { "role": "SRE", "company": "Cleartrip", "years": "2014–2019", "highlights": ["Migrated to Kubernetes from VM-based fleet."] }
+    ],
+    "education": [{ "degree": "B.E. IT", "school": "Mumbai University", "year": 2014 }]
+  },
+  {
+    "id": "c08",
+    "name": "Nidhi Kapoor",
+    "email": "nidhi.kapoor@example.com",
+    "phone": "+91-98708-88123",
+    "location": "Delhi, India",
+    "linkedin": "linkedin.com/in/nidhi-kapoor",
+    "github": "github.com/nidhik",
+    "summary": "AI engineer, 6 years. Heavy experience with prompt-engineering, retrieval, and LLM-tool-use. Built MCP servers.",
+    "skills": ["TypeScript", "Python", "MCP", "Anthropic", "OpenAI", "Pinecone", "Postgres", "Docker", "OpenTelemetry", "Zod"],
+    "experience": [
+      { "role": "Senior AI Engineer", "company": "Glean (India)", "years": "2022–present", "highlights": ["Built MCP server for enterprise search.", "Owned tool-use eval harness with golden datasets."] },
+      { "role": "Engineer", "company": "Uber", "years": "2018–2022", "highlights": ["Maps backend; some ML feature engineering."] }
+    ],
+    "education": [{ "degree": "M.S. CS", "school": "Stanford University", "year": 2018 }]
+  },
+  {
+    "id": "c09",
+    "name": "Arjun Kumar",
+    "email": "arjun.k@example.com",
+    "phone": "+91-99889-11456",
+    "location": "Hyderabad, India",
+    "linkedin": "linkedin.com/in/arjun-kumar",
+    "github": "github.com/arjunk",
+    "summary": "Backend engineer, 3 years. Strong Java, learning TypeScript and Python.",
+    "skills": ["Java", "Spring Boot", "Postgres", "Kafka", "Docker", "TypeScript"],
+    "experience": [
+      { "role": "Engineer", "company": "Salesforce", "years": "2022–present", "highlights": ["Owned Apex compilation service.", "Migrated 12 services to OTel."] },
+      { "role": "Junior Engineer", "company": "TCS", "years": "2021–2022", "highlights": ["Java microservices for a banking client."] }
+    ],
+    "education": [{ "degree": "B.Tech ECE", "school": "NIT Warangal", "year": 2021 }]
+  },
+  {
+    "id": "c10",
+    "name": "Sara Lin",
+    "email": "sara.lin@example.com",
+    "phone": "+1-650-555-0411",
+    "location": "Palo Alto, USA",
+    "linkedin": "linkedin.com/in/sara-lin",
+    "github": "github.com/saralin",
+    "summary": "Full-stack + AI engineer, 7 years. Owned a production agentic workflow with mid-flight intervention.",
+    "skills": ["TypeScript", "Python", "Temporal", "Postgres", "Cosmos DB", "OpenAI", "Anthropic", "MCP", "GraphQL", "Next.js", "OpenTelemetry"],
+    "experience": [
+      { "role": "Tech Lead", "company": "Glide AI", "years": "2022–present", "highlights": ["Designed mid-flight intervention layer (pause/resume/override) for support agent.", "Built behavior eval pipeline with drift detection."] },
+      { "role": "Senior Engineer", "company": "Plaid", "years": "2018–2022", "highlights": ["Owned link onboarding flow.", "Authored Temporal adoption RFC."] }
+    ],
+    "education": [{ "degree": "B.S. CS", "school": "MIT", "year": 2018 }]
+  }
+]
