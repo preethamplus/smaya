@@ -1,0 +1,52 @@
+[
+  {
+    "id": "c91",
+    "rawText": "Aarav Iyer\naarav.iyer@example.com · +91-98450-12345 · Bengaluru, India\nlinkedin.com/in/aarav-iyer · github.com/aaraviyer\nSummary\nSenior backend engineer.\nSkills\nTypeScript, Python\nExperience\nStaff Engineer — Flipcart Logistics\n2022–present\n• Owned Temporal cluster.\nEducation\nB.Tech CSE, IIT Madras (2017)",
+    "expectedMaskedFields": {
+      "nameToken": "[NAME:018623A1]",
+      "emailToken": "[EMAIL:9FC490A1]",
+      "phoneToken": "[PHONE:E0726322]",
+      "locationGeneralized": "India"
+    }
+  },
+  {
+    "id": "c92",
+    "rawText": "Priya Subramanian\npriya.s@example.com · +91-99000-22345 · Chennai, India\nlinkedin.com/in/priya-subramanian · github.com/priyas\nSummary\nApplied AI engineer.\nSkills\nPython, TypeScript\nExperience\nSenior AI Engineer — LegalDocs AI\n2021–present\n• Eval harness.\nEducation\nM.S. Computer Science, IIIT Hyderabad (2019)",
+    "expectedMaskedFields": {
+      "nameToken": "[NAME:E3DF154D]",
+      "emailToken": "[EMAIL:15B23295]",
+      "phoneToken": "[PHONE:8F6580F3]",
+      "locationGeneralized": "India"
+    }
+  },
+  {
+    "id": "c93",
+    "rawText": "Daniel O'Brien\ndan.obrien@example.com · +1-415-555-0192 · San Francisco, USA\nlinkedin.com/in/dan-obrien · github.com/danobrien\nSummary\nBackend.\nSkills\nPython, Go\nExperience\nSenior Engineer — Vector.io\n2023–present\n• Agentic.\nEducation\nB.S. CS, UC Berkeley (2018)",
+    "expectedMaskedFields": {
+      "nameToken": "[NAME:A67B43CE]",
+      "emailToken": "[EMAIL:555605BF]",
+      "phoneToken": "[PHONE:5A3EDF16]",
+      "locationGeneralized": "USA"
+    }
+  },
+  {
+    "id": "c94",
+    "rawText": "Sara Lin\nsara.lin@example.com · +1-650-555-0411 · Palo Alto, USA\nlinkedin.com/in/sara-lin · github.com/saralin\nSummary\nFull-stack.\nSkills\nTypeScript\nExperience\nTech Lead — Glide AI\n2022–present\n• Mid-flight intervention.\nEducation\nB.S. CS, MIT (2018)",
+    "expectedMaskedFields": {
+      "nameToken": "[NAME:FF08791D]",
+      "emailToken": "[EMAIL:BAAEAD23]",
+      "phoneToken": "[PHONE:862F9383]",
+      "locationGeneralized": "USA"
+    }
+  },
+  {
+    "id": "c95",
+    "rawText": "Krithika Rao\nkrithika.rao@example.com · +91-94440-77890 · Bengaluru, India\nlinkedin.com/in/krithika-rao · github.com/krithikar\nSummary\nDistributed.\nSkills\nTypeScript\nExperience\nPrincipal Engineer — Atlassian\n2020–present\n• Cadence.\nEducation\nM.Tech CSE, IISc Bangalore (2015)",
+    "expectedMaskedFields": {
+      "nameToken": "[NAME:4BFFE267]",
+      "emailToken": "[EMAIL:3BA69488]",
+      "phoneToken": "[PHONE:F97BFF3C]",
+      "locationGeneralized": "India"
+    }
+  }
+]
