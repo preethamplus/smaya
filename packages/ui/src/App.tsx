@@ -21,6 +21,27 @@ export function App(): React.ReactElement {
   const [runs, setRuns] = useState<RunStatus[]>([]);
   const [activeRunId, setActiveRunId] = useState<string | undefined>(undefined);
   const [events, setEvents] = useState<RunEvent[]>([]);
+  const [starting, setStarting] = useState(false);
+
+  const startMission = async (): Promise<void> => {
+    setStarting(true);
+    try {
+      const data = await gql<{ startMission: RunStatus }>(
+        `mutation Start($topN: Int, $compress: Float) {
+          startMission(topN: $topN, compressFactor: $compress) {
+            runId stage status costUsd etaSec goal pendingGates { runId gate expiresAt }
+          }
+        }`,
+        { topN: 3, compress: 25 },
+      );
+      setActiveRunId(data.startMission.runId);
+      setRuns((prev) => [data.startMission, ...prev.filter((r) => r.runId !== data.startMission.runId)]);
+    } catch (e) {
+      alert(`startMission failed: ${(e as Error).message}`);
+    } finally {
+      setStarting(false);
+    }
+  };
 
   // Initial fetch + polling
   useEffect(() => {
@@ -67,7 +88,10 @@ export function App(): React.ReactElement {
       <div className="layout">
         <aside className="sidebar">
           <h3>Runs</h3>
-          {runs.length === 0 && <div className="kv">No runs yet. Start one with <code>npm run mission:run</code>.</div>}
+          <button className="btn primary" disabled={starting} onClick={() => void startMission()} style={{ width: "100%", marginBottom: 8 }}>
+            {starting ? "Starting…" : "+ Start Mission"}
+          </button>
+          {runs.length === 0 && <div className="kv">No runs yet.</div>}
           {runs.map((r) => (
             <div
               key={r.runId}

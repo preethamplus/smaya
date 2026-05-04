@@ -34,8 +34,14 @@ UI: http://localhost:3000 · GraphQL: http://localhost:4000/graphql · Jaeger: h
 | `packages/intervention-api` | E | GraphQL surface for chat-driven intervention |
 | `packages/ui` | D | Next.js Activity / Approvals / Agent tabs |
 
-## Design docs
+## Docs
 
+**For users**
+- [`docs/USAGE.md`](./docs/USAGE.md) — install, run, configure, step-by-step demo flow
+- [`docs/FEATURES.md`](./docs/FEATURES.md) — what the system does, organized by capability
+- [`docs/TESTING.md`](./docs/TESTING.md) — verification matrix per non-negotiable, scenario tests, troubleshooting
+
+**For reviewers**
 - [`plan.md`](./plan.md) — strategy, LLM choice, sequencing, trade-offs
 - [`docs/MODULE_A_WALKTHROUGH.md`](./docs/MODULE_A_WALKTHROUGH.md) — orchestrator
 - [`docs/MODULE_B_WALKTHROUGH.md`](./docs/MODULE_B_WALKTHROUGH.md) — MCP tools
@@ -43,7 +49,8 @@ UI: http://localhost:3000 · GraphQL: http://localhost:4000/graphql · Jaeger: h
 - [`docs/MODULE_D_WALKTHROUGH.md`](./docs/MODULE_D_WALKTHROUGH.md) — UI
 - [`docs/MODULE_E_WALKTHROUGH.md`](./docs/MODULE_E_WALKTHROUGH.md) — intervention API
 - [`docs/AI_RETRO.md`](./docs/AI_RETRO.md) — "where AI got it wrong, what I did"
+- [`docs/NON_NEGOTIABLES.md`](./docs/NON_NEGOTIABLES.md) — clause-by-clause map of the 17 non-negotiables to code paths
 
 ## Rubric coverage
 
-See [`docs/NON_NEGOTIABLES.md`](./docs/NON_NEGOTIABLES.md) for a clause-by-clause map of the 17 non-negotiables to code paths.
+See [`docs/NON_NEGOTIABLES.md`](./docs/NON_NEGOTIABLES.md) for a clause-by-clause map. See [`docs/TESTING.md`](./docs/TESTING.md) for how to verify each one.
