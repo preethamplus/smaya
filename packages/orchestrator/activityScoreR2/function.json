@@ -1,0 +1,11 @@
+{
+  "bindings": [
+    {
+      "name": "input",
+      "type": "activityTrigger",
+      "direction": "in"
+    }
+  ],
+  "scriptFile": "../dist/df-binding.js",
+  "entryPoint": "activityScoreR2"
+}

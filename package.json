@@ -14,7 +14,7 @@
     "evals:run": "npm run evals:run -w @smaya/evals",
     "ui:dev": "npm run dev -w @smaya/ui",
     "api:dev": "npm run dev -w @smaya/intervention-api",
-    "start:func": "npm run build && npx func start"
+    "start:func": "npm run build && NODE_OPTIONS='--import tsx' func start --script-root packages/orchestrator"
   },
   "devDependencies": {
     "@types/node": "20.14.10",
