@@ -46,7 +46,7 @@ export const voiceCall = defineTool({
   handler: async (input) => {
     if (NO_ANSWER_FIRST_ATTEMPT.has(input.candidateId) && input.attempt === 1) {
       return {
-        status: "NO_ANSWER",
+        status: "NO_ANSWER" as const,
         candidateId: input.candidateId,
         attempt: input.attempt,
         nextRetryHintMs: 500 * Math.pow(4, input.attempt - 1), // 500ms, 2s, 8s
@@ -66,7 +66,7 @@ export const voiceCall = defineTool({
     ].join("\n");
 
     return {
-      status: "COMPLETED",
+      status: "COMPLETED" as const,
       candidateId: input.candidateId,
       transcript,
       durationSec,

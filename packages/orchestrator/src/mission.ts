@@ -125,6 +125,51 @@ export class Mission {
     }
   }
 
+  // ---- DF adapter: run a single stage by name ----------------------------
+
+  /** Called by the Azure Functions activity wrappers in df-binding.ts. */
+  async runStage(stage: MissionStage): Promise<void> {
+    switch (stage) {
+      case "INGEST":          return this.stageIngest();
+      case "PARSE":           return this.stagePARSE();
+      case "SCORE_R1":        return this.stageSCORE_R1();
+      case "GATE_1":          return this.stageGATE_1();
+      case "PHONE_SCREEN":    return this.stagePHONE_SCREEN_with_NUDGE();
+      case "NUDGE":           return; // driven internally by PHONE_SCREEN
+      case "SCORE_R2":        return this.stageSCORE_R2();
+      case "AVATAR":
+        if (!this.input.goal.skipStages.includes("AVATAR")) {
+          return this.stageAVATAR();
+        }
+        return;
+      case "SCORE_R3":        return this.stageSCORE_R3();
+      case "SEND_LEADERBOARD": return this.stageSEND_LEADERBOARD();
+      case "GATE_2":          return this.stageGATE_2();
+      case "SCHEDULE_PANEL":  return this.stageSCHEDULE_PANEL();
+      case "DECISION_PACK":   return this.stageDECISION_PACK();
+      case "SELF_PAUSE":      await this.transition("SELF_PAUSE"); return;
+    }
+  }
+
+  /** Start heartbeat — exposed so df-binding can manage it outside run_(). */
+  startHeartbeat(): Heartbeat {
+    const hb = new Heartbeat(this.run, async () => {
+      if (costLedger.isAtSoftCap(this.run.id) && !this.paused) {
+        await this.softBudgetPause();
+      }
+      await repos.putRun(this.run);
+    });
+    void hb.start();
+    return hb;
+  }
+
+  /** Mark run COMPLETED — exposed so df-binding can finalise outside run_(). */
+  async markCompleted(): Promise<void> {
+    this.run.status = "COMPLETED";
+    await repos.putRun(this.run);
+    bus.emitRun({ type: "RUN_COMPLETED", runId: this.run.id, tenantId: this.run.tenantId, detail: {}, at: now() });
+  }
+
   // ---- Stages ------------------------------------------------------------
 
   private async stageIngest(): Promise<void> {
