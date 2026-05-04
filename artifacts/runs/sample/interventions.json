@@ -1,0 +1,105 @@
+[
+  {
+    "id": "1c92d1e3-000f-4347-89b7-3ec61d4bd717",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "intent": "STATUS_QUERY",
+    "payload": {
+      "raw": "where are you on candidate 4?"
+    },
+    "operator": "ops@smaya.example.com",
+    "accepted": true,
+    "diff": {
+      "stage": "GATE_2",
+      "status": "AWAITING_GATE",
+      "costUsd": 1.6220000000000003,
+      "etaSec": 0.4
+    },
+    "at": 1777861476278
+  },
+  {
+    "id": "14803748-c2c5-47a4-a974-1b41fadedaa4",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "intent": "ADD_CONTEXT",
+    "payload": {
+      "context": "Also consider GitHub activity."
+    },
+    "operator": "ops@smaya.example.com",
+    "accepted": true,
+    "diff": {
+      "diff": {
+        "added": "Also consider GitHub activity."
+      }
+    },
+    "at": 1777861477790
+  },
+  {
+    "id": "d48a65c9-2368-4295-ad6f-c7d1764e6676",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "intent": "UPDATE_GOAL",
+    "payload": {
+      "topN": 5
+    },
+    "operator": "ops@smaya.example.com",
+    "accepted": true,
+    "diff": {
+      "diff": {
+        "topN": 5
+      },
+      "version": 2
+    },
+    "at": 1777861480000
+  },
+  {
+    "id": "576f6da4-9562-45b5-8c10-9ffe72d1fd11",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "intent": "OVERRIDE_DECISION",
+    "payload": {
+      "kind": "skip_gate",
+      "target": "GATE_1"
+    },
+    "operator": "ops@smaya.example.com",
+    "accepted": false,
+    "reason": "Predefined gates are non-bypassable. Use the Approvals tab to approve normally.",
+    "at": 1777861482813
+  },
+  {
+    "id": "f8941bf7-4ff0-4586-b85d-ca67891d2753",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "intent": "REPLAY_ACTION",
+    "payload": {
+      "kind": "score",
+      "candidateId": "c07"
+    },
+    "operator": "ops@smaya.example.com",
+    "accepted": true,
+    "diff": {
+      "replayed": {
+        "kind": "score",
+        "candidateId": "c07"
+      }
+    },
+    "at": 1777861486218
+  },
+  {
+    "id": "6dcb93ec-c6e5-4c24-9bb6-c87587a9d460",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "intent": "OVERRIDE_DECISION",
+    "payload": {
+      "kind": "reject_candidate",
+      "target": "Krithika Rao"
+    },
+    "rationale": "Not a fit for this round.",
+    "operator": "ops@smaya.example.com",
+    "accepted": true,
+    "diff": {
+      "rejected": "c04"
+    },
+    "at": 1777861490725
+  }
+]

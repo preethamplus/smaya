@@ -1,0 +1,67 @@
+[
+  {
+    "id": "0bcb6346-0b0c-4f1a-a952-1b4f2ba0efdf",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "evalName": "PII_MASKING",
+    "score": 1,
+    "threshold": 1,
+    "passed": true,
+    "details": {
+      "evaluated": 5,
+      "passed": 5,
+      "failures": [],
+      "candidatesInRun": 0
+    },
+    "at": 1777861475485
+  },
+  {
+    "id": "ddcea177-1302-4076-aa30-c5381cb1ce01",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "evalName": "SCORE_STABILITY",
+    "score": 1,
+    "threshold": 1,
+    "passed": true,
+    "details": {
+      "topA": [
+        "c02",
+        "c03",
+        "c05",
+        "c06",
+        "c08",
+        "c09"
+      ],
+      "topB": [
+        "c02",
+        "c03",
+        "c05",
+        "c06",
+        "c08",
+        "c09"
+      ],
+      "runR1Count": 10
+    },
+    "at": 1777861476138
+  },
+  {
+    "id": "a00b6fb1-41fc-4653-acba-2f64e9205e82",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "evalName": "LEADERBOARD_BIAS",
+    "score": 0.5,
+    "threshold": 0.8,
+    "passed": true,
+    "details": {
+      "px": 0.2,
+      "py": 0.4,
+      "xTop": 1,
+      "xTotal": 5,
+      "yTop": 2,
+      "yTotal": 5,
+      "ratio": 0.5,
+      "smallSampleFallback": true
+    },
+    "at": 1777861476174
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "id": "cb0d817f-e22a-4255-ba9e-fd2b9a5e5b09",
+  "kind": "event",
+  "attendees": [
+    "alice@smaya.example.com",
+    "bob@smaya.example.com",
+    "c01@candidate.example.com"
+  ],
+  "subject": "Final panel — c01 for smaya-senior-backend-2026",
+  "startsAt": 1777861620340,
+  "endsAt": 1777861626340,
+  "description": "Composite 90/100\nDeterministic score 95/100. Dimensions reflect skills and experience derived from masked profile + interview signal. Interview avg: 81.3/100. Flags: red=0, green=1.",
+  "webLink": "outlook://event/cb0d817f-e22a-4255-ba9e-fd2b9a5e5b09",
+  "at": 1777861476343
+}

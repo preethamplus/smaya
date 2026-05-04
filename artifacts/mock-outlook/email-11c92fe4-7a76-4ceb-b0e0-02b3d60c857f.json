@@ -1,0 +1,12 @@
+{
+  "id": "11c92fe4-7a76-4ceb-b0e0-02b3d60c857f",
+  "kind": "email",
+  "to": [
+    "alice@smaya.example.com",
+    "bob@smaya.example.com"
+  ],
+  "subject": "Smaya leaderboard — run 37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+  "body": "#1 c01 (90/100): Deterministic score 95/100. Dimensions reflect skills and experience derived from masked profile + interview signal. Interview avg: 81.3/100. Flags: red=0, green=1.\n#2 c06 (79/100): Deterministic score 89/100. Dimensions reflect skills and experience derived from masked profile + interview signal. Interview avg: 63.3/100. Flags: red=1, green=0.\n#3 c04 (76/100): Deterministic score 80/100. Dimensions reflect skills and experience derived from masked profile + interview signal. Interview avg: 69.5/100. Flags: red=0, green=1.",
+  "webLink": "outlook://email/11c92fe4-7a76-4ceb-b0e0-02b3d60c857f",
+  "at": 1777861476224
+}
