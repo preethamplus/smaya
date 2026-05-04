@@ -1,0 +1,23 @@
+{
+  "name": "@smaya/intervention-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "test": "vitest run",
+    "dev": "tsx src/server.ts"
+  },
+  "dependencies": {
+    "@smaya/shared": "1.0.0",
+    "@smaya/data": "1.0.0",
+    "@smaya/orchestrator": "1.0.0",
+    "graphql": "16.9.0",
+    "graphql-yoga": "5.7.0",
+    "zod": "^3.23.8"
+  }
+}
