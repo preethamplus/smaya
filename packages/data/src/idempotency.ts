@@ -37,10 +37,10 @@ export class RedisIdempotency implements IdempotencyStore {
   private async client(): Promise<{ get: (k: string) => Promise<string | null>; set: (k: string, v: string, opts: { PX: number }) => Promise<unknown>; exists: (k: string) => Promise<number> }> {
     if (!this.clientPromise) {
       this.clientPromise = (async () => {
+        // @ts-expect-error optional runtime dependency
         const redis = await import("redis").catch(() => null);
         if (!redis) throw new Error("redis package not installed; SMAYA_REDIS=1 requires it");
         const url = process.env.REDIS_URL ?? "redis://localhost:6379";
-        // @ts-expect-error redis exports createClient
         const c = redis.createClient({ url });
         await c.connect();
         return c;

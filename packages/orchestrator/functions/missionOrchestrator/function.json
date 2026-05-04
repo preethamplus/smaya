@@ -1,0 +1,11 @@
+{
+  "bindings": [
+    {
+      "name": "context",
+      "type": "orchestrationTrigger",
+      "direction": "in"
+    }
+  ],
+  "scriptFile": "../../dist/df-binding.js",
+  "entryPoint": "missionOrchestrator"
+}

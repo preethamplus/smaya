@@ -82,6 +82,7 @@ class DeterministicMockLLM implements LLMClient {
 class AnthropicLLM implements LLMClient {
   async complete(req: LLMRequest): Promise<LLMResponse> {
     // Lazy import to avoid forcing reviewers to install @anthropic-ai/sdk.
+    // @ts-expect-error optional runtime dependency
     const { default: Anthropic } = await import("@anthropic-ai/sdk").catch(() => ({ default: null as never }));
     if (!Anthropic) throw new Error("@anthropic-ai/sdk not installed; SMAYA_LLM=anthropic requires it");
     const key = process.env.ANTHROPIC_API_KEY;
