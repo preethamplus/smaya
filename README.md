@@ -22,6 +22,36 @@ npm run mission:run -- --in-memory --compress 60
 
 UI: http://localhost:3000 · GraphQL: http://localhost:4000/graphql · Jaeger: http://localhost:16686
 
+### Running with Azure Functions (Durable Functions)
+
+The orchestrator can also run under Azure Functions Core Tools v4 using Durable Functions bindings.
+
+**Prerequisites**: [Azure Functions Core Tools v4](https://learn.microsoft.com/azure/azure-functions/functions-run-local) and [Azurite](https://learn.microsoft.com/azure/storage/common/storage-use-azurite) (Azure Storage emulator).
+
+```bash
+# Install prerequisites (if not already available)
+npm install -g azure-functions-core-tools@4 --unsafe-perm true
+npm install -g azurite
+
+# Start Azurite in the background
+azurite --silent &
+
+# Build all packages and start the function host
+npm run start:func
+```
+
+This builds the workspace and runs `func start --script-root packages/orchestrator`. The host discovers 18 functions (1 orchestrator, 1 HTTP trigger, 16 activities).
+
+Start an orchestration via HTTP:
+
+```bash
+curl -X POST http://localhost:7071/api/orchestrators/missionOrchestrator \
+  -H "Content-Type: application/json" \
+  -d '{"tenantId":"demo","runId":"run-1","jdText":"…","resumeTexts":["…"]}'
+```
+
+> `NODE_OPTIONS='--import tsx'` is set automatically by the script — workspace packages export `.ts` source files and the tsx loader handles them at runtime.
+
 ## Layout
 
 | Package | Module | Purpose |
@@ -32,7 +62,7 @@ UI: http://localhost:3000 · GraphQL: http://localhost:4000/graphql · Jaeger: h
 | `packages/evals` | — | Behavior evals + golden datasets |
 | `packages/orchestrator` | A | 14-stage mission orchestrator with heartbeat + intervention layer |
 | `packages/intervention-api` | E | GraphQL surface for chat-driven intervention |
-| `packages/ui` | D | Next.js Activity / Approvals / Agent tabs |
+| `packages/ui` | D | Vite + React Activity / Approvals / Agent tabs |
 
 ## Docs
 
