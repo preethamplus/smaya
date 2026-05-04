@@ -1,0 +1,38 @@
+{
+  "id": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+  "tenantId": "default",
+  "goal": {
+    "topN": 5,
+    "jdId": "smaya-senior-backend-2026",
+    "excludedCandidates": [
+      "c04"
+    ],
+    "skipStages": []
+  },
+  "goalVersion": 2,
+  "status": "COMPLETED",
+  "stage": "SELF_PAUSE",
+  "candidateIds": [
+    "c01",
+    "c02",
+    "c03",
+    "c04",
+    "c05",
+    "c06",
+    "c07",
+    "c08",
+    "c09",
+    "c10"
+  ],
+  "heartbeat": {
+    "lastTickAt": 1777861476247,
+    "nextTickAt": 1777861476747,
+    "cadenceMs": 300000,
+    "driftMs": 8,
+    "skipCount": 0
+  },
+  "costUsd": 0,
+  "costCapUsd": 5,
+  "startedAt": 1777861475475,
+  "updatedAt": 1777861476347
+}

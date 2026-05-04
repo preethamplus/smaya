@@ -1,0 +1,10 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "SMAYA_COSMOS": "",
+    "COSMOS_ENDPOINT": "https://localhost:8081",
+    "COSMOS_DB": "smaya"
+  }
+}

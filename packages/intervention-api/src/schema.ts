@@ -63,6 +63,14 @@ export const typeDefs = /* GraphQL */ `
 
     approveGate(runId: ID!, gate: String!, operator: String!): Boolean!
     rejectGate(runId: ID!, gate: String!, operator: String!, reason: String!): Boolean!
+
+    startMission(
+      tenantId: String
+      jdId: String
+      topN: Int
+      budgetUsd: Float
+      compressFactor: Float
+    ): RunStatus!
   }
 
   type RunEvent {

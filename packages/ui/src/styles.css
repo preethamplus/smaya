@@ -1,0 +1,85 @@
+:root {
+  --bg: #0b0e14;
+  --panel: #11151c;
+  --panel-2: #161a23;
+  --border: #2a2f3a;
+  --fg: #e6e7ea;
+  --muted: #8a93a3;
+  --accent: #7aa2f7;
+  --good: #7dd3a1;
+  --bad: #f78c8c;
+  --warn: #f7c178;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+}
+.app { display: grid; grid-template-rows: 56px 1fr; height: 100vh; }
+.topbar {
+  display: flex; align-items: center; gap: 24px;
+  padding: 0 16px; border-bottom: 1px solid var(--border); background: var(--panel);
+}
+.topbar h1 { margin: 0; font-size: 16px; font-weight: 600; letter-spacing: 0.4px; }
+.tabs { display: flex; gap: 8px; }
+.tab {
+  padding: 6px 12px; border-radius: 8px; cursor: pointer;
+  color: var(--muted); border: 1px solid transparent;
+}
+.tab.active { color: var(--fg); background: var(--panel-2); border-color: var(--border); }
+.run-pill { margin-left: auto; font-size: 12px; color: var(--muted); }
+.layout { display: grid; grid-template-columns: 240px 1fr; height: 100%; min-height: 0; }
+.sidebar { border-right: 1px solid var(--border); padding: 12px; overflow: auto; background: var(--panel); }
+.sidebar h3 { font-size: 11px; text-transform: uppercase; color: var(--muted); margin: 8px 4px; letter-spacing: 1px; }
+.run-row { padding: 8px; border-radius: 6px; cursor: pointer; font-size: 13px; }
+.run-row.active { background: var(--panel-2); }
+.run-row .id { color: var(--muted); font-family: ui-monospace, monospace; font-size: 11px; }
+.main { padding: 16px; overflow: auto; }
+.card { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 14px; margin-bottom: 12px; }
+.h { display: flex; align-items: center; gap: 8px; }
+.kv { color: var(--muted); font-size: 12px; }
+.kv b { color: var(--fg); font-weight: 500; margin-right: 4px; }
+.timeline { display: flex; flex-direction: column; gap: 6px; max-height: 70vh; overflow: auto; }
+.event {
+  display: grid; grid-template-columns: 80px 160px 1fr; gap: 12px;
+  padding: 6px 8px; border-radius: 6px; font-size: 12px;
+  background: var(--panel-2); border: 1px solid var(--border);
+}
+.event .ts { color: var(--muted); font-family: ui-monospace, monospace; }
+.event .type { font-weight: 600; }
+.event.STAGE_TRANSITION .type { color: var(--accent); }
+.event.GATE_REQUESTED .type { color: var(--warn); }
+.event.GATE_APPROVED .type { color: var(--good); }
+.event.INTERVENTION .type { color: var(--accent); }
+.event.EVAL_RESULT .type { color: var(--good); }
+.event.MCP_CALL .type { color: var(--muted); }
+.event.RUN_PAUSED .type, .event.BUDGET_PAUSE .type { color: var(--warn); }
+.event.RUN_ABORTED .type { color: var(--bad); }
+.event.RUN_COMPLETED .type { color: var(--good); }
+.gate-card { border-color: var(--warn); }
+.btn {
+  padding: 6px 12px; border-radius: 6px; border: 1px solid var(--border);
+  background: var(--panel-2); color: var(--fg); cursor: pointer; font-size: 12px;
+}
+.btn:hover { background: #1c2230; }
+.btn.primary { background: var(--accent); color: #0b0e14; border-color: var(--accent); }
+.btn.danger  { background: var(--bad); color: #0b0e14; border-color: var(--bad); }
+.chat { display: grid; grid-template-rows: 1fr auto; gap: 12px; height: 70vh; }
+.chat-log { display: flex; flex-direction: column; gap: 6px; overflow: auto; padding-right: 4px; }
+.chat-row { padding: 8px 10px; border-radius: 8px; font-size: 13px; }
+.chat-row.user { background: #1f2433; align-self: flex-end; max-width: 70%; }
+.chat-row.agent { background: var(--panel-2); border: 1px solid var(--border); max-width: 80%; }
+.chat-row.refused { border-color: var(--bad); }
+.chat-row .meta { color: var(--muted); font-size: 11px; margin-top: 4px; }
+.chat-form { display: flex; gap: 8px; }
+.chat-form input { flex: 1; padding: 8px 10px; background: var(--panel-2); color: var(--fg); border: 1px solid var(--border); border-radius: 6px; }
+.diff { font-family: ui-monospace, monospace; font-size: 12px; background: #07090e; padding: 8px; border-radius: 6px; border: 1px solid var(--border); white-space: pre-wrap; }
+.confirm { display: flex; gap: 8px; align-items: center; }
+.empty { color: var(--muted); padding: 32px; text-align: center; }
+.preview {
+  background: var(--panel-2); border: 1px solid var(--border);
+  border-radius: 8px; padding: 8px 10px; font-size: 12px;
+}
+.preview h4 { margin: 0 0 6px; font-size: 12px; color: var(--muted); }

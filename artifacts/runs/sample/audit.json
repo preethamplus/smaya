@@ -1,0 +1,355 @@
+[
+  {
+    "id": "c82bea5e-9b15-4465-84ed-87ddb7af03ea",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "type": "STAGE_TRANSITION",
+    "detail": {
+      "from": "INGEST",
+      "to": "INGEST"
+    },
+    "at": 1777861475478
+  },
+  {
+    "id": "16a6fdac-6b1b-4848-876c-21d274431f3a",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "type": "STAGE_TRANSITION",
+    "detail": {
+      "from": "INGEST",
+      "to": "PARSE"
+    },
+    "at": 1777861475480
+  },
+  {
+    "id": "aec3018b-2d50-41bc-b79e-eb033190cac2",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "type": "STAGE_TRANSITION",
+    "detail": {
+      "from": "PARSE",
+      "to": "SCORE_R1"
+    },
+    "at": 1777861476047
+  },
+  {
+    "id": "7d7224d1-849f-48aa-9572-bdc2cf90633b",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "type": "STAGE_TRANSITION",
+    "detail": {
+      "from": "SCORE_R1",
+      "to": "GATE_1"
+    },
+    "at": 1777861476048
+  },
+  {
+    "id": "21192c83-c7ae-4dac-a522-f01f63f39b5c",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "type": "GATE_REQUESTED",
+    "detail": {
+      "gate": "GATE_1",
+      "expiresAt": 1777861500048
+    },
+    "at": 1777861476048
+  },
+  {
+    "id": "eff70411-0567-4886-b06e-ddd6960998a1",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "type": "GATE_APPROVED",
+    "detail": {
+      "gate": "GATE_1",
+      "by": "recruiter@smaya.example.com"
+    },
+    "operator": "recruiter@smaya.example.com",
+    "at": 1777861476137
+  },
+  {
+    "id": "b2814e03-5801-4ca5-914a-dc4c68ad5f27",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "type": "STAGE_TRANSITION",
+    "detail": {
+      "from": "GATE_1",
+      "to": "PHONE_SCREEN"
+    },
+    "at": 1777861476138
+  },
+  {
+    "id": "27f8cab1-7b15-41c3-97c1-20b7c4c4d1a6",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "type": "STAGE_TRANSITION",
+    "detail": {
+      "from": "PHONE_SCREEN",
+      "to": "NUDGE"
+    },
+    "at": 1777861476139
+  },
+  {
+    "id": "390e2028-52ca-4236-bc38-9489a8c650d0",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "type": "STAGE_TRANSITION",
+    "detail": {
+      "from": "NUDGE",
+      "to": "PHONE_SCREEN"
+    },
+    "at": 1777861476152
+  },
+  {
+    "id": "dc83c1fc-94bb-424c-bacc-76371237df9a",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "type": "STAGE_TRANSITION",
+    "detail": {
+      "from": "PHONE_SCREEN",
+      "to": "NUDGE"
+    },
+    "at": 1777861476153
+  },
+  {
+    "id": "05abb983-cf1c-46fd-b199-d01fabeeaa15",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "type": "STAGE_TRANSITION",
+    "detail": {
+      "from": "NUDGE",
+      "to": "PHONE_SCREEN"
+    },
+    "at": 1777861476168
+  },
+  {
+    "id": "617887ce-365b-470f-a7b9-2cab6ceb65ea",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "type": "STAGE_TRANSITION",
+    "detail": {
+      "from": "PHONE_SCREEN",
+      "to": "SCORE_R2"
+    },
+    "at": 1777861476169
+  },
+  {
+    "id": "39210773-6369-497b-8e4f-547c7893f619",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "type": "STAGE_TRANSITION",
+    "detail": {
+      "from": "SCORE_R2",
+      "to": "AVATAR"
+    },
+    "at": 1777861476170
+  },
+  {
+    "id": "b4fd1f5c-e582-4cb8-bce3-d5aa3dbbc49b",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "type": "STAGE_TRANSITION",
+    "detail": {
+      "from": "AVATAR",
+      "to": "SCORE_R3"
+    },
+    "at": 1777861476173
+  },
+  {
+    "id": "6d2bd8be-dbc3-479c-b6d3-f3220cbc85f9",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "type": "STAGE_TRANSITION",
+    "detail": {
+      "from": "SCORE_R3",
+      "to": "SEND_LEADERBOARD"
+    },
+    "at": 1777861476173
+  },
+  {
+    "id": "324b9c6c-a924-4163-b540-bc65b2e4e2fb",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "type": "STAGE_TRANSITION",
+    "detail": {
+      "from": "SEND_LEADERBOARD",
+      "to": "GATE_2"
+    },
+    "at": 1777861476228
+  },
+  {
+    "id": "d6ac9885-5100-4df6-841a-3d0e8f9085eb",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "type": "GATE_REQUESTED",
+    "detail": {
+      "gate": "GATE_2",
+      "expiresAt": 1777861500228
+    },
+    "at": 1777861476228
+  },
+  {
+    "id": "f0a3eaa2-5577-43a7-a434-009f3c5fc707",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "type": "INTERVENTION",
+    "detail": {
+      "intent": "STATUS_QUERY",
+      "diff": {
+        "stage": "GATE_2",
+        "status": "AWAITING_GATE",
+        "costUsd": 1.6220000000000003,
+        "etaSec": 0.4
+      }
+    },
+    "operator": "ops@smaya.example.com",
+    "at": 1777861476278
+  },
+  {
+    "id": "5acdb923-a141-4c8e-9c25-666f1349c238",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "type": "GATE_APPROVED",
+    "detail": {
+      "gate": "GATE_2",
+      "by": "panel@smaya.example.com"
+    },
+    "operator": "panel@smaya.example.com",
+    "at": 1777861476340
+  },
+  {
+    "id": "4cf1d144-3cad-4166-a78a-b1f7cb2c397b",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "type": "STAGE_TRANSITION",
+    "detail": {
+      "from": "GATE_2",
+      "to": "SCHEDULE_PANEL"
+    },
+    "at": 1777861476340
+  },
+  {
+    "id": "b7f2dfae-4e84-46fd-b4ec-ff9892ac64bf",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "type": "STAGE_TRANSITION",
+    "detail": {
+      "from": "SCHEDULE_PANEL",
+      "to": "DECISION_PACK"
+    },
+    "at": 1777861476346
+  },
+  {
+    "id": "17f410af-5bb6-4c9e-9b1d-c010ac55d6e4",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "type": "STAGE_TRANSITION",
+    "detail": {
+      "from": "DECISION_PACK",
+      "to": "SELF_PAUSE"
+    },
+    "at": 1777861476347
+  },
+  {
+    "id": "5990f15b-e41e-48e3-aab9-bcde288e3dbf",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "type": "INTERVENTION",
+    "detail": {
+      "intent": "ADD_CONTEXT",
+      "text": "Also consider GitHub activity."
+    },
+    "operator": "ops@smaya.example.com",
+    "at": 1777861477790
+  },
+  {
+    "id": "0eda49ba-f8e8-430d-afcf-d54693eba602",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "type": "INTERVENTION",
+    "detail": {
+      "intent": "ADD_CONTEXT",
+      "diff": {
+        "diff": {
+          "added": "Also consider GitHub activity."
+        }
+      }
+    },
+    "operator": "ops@smaya.example.com",
+    "at": 1777861477790
+  },
+  {
+    "id": "15a5ff35-3691-423d-ba0e-40331c793955",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "type": "INTERVENTION",
+    "detail": {
+      "intent": "UPDATE_GOAL",
+      "diff": {
+        "diff": {
+          "topN": 5
+        },
+        "version": 2
+      }
+    },
+    "operator": "ops@smaya.example.com",
+    "at": 1777861480000
+  },
+  {
+    "id": "7c5971cf-c170-4b0e-bf90-222dbb2800b2",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "type": "INTERVENTION",
+    "detail": {
+      "intent": "REPLAY_ACTION",
+      "kind": "score",
+      "candidateId": "c07"
+    },
+    "operator": "ops@smaya.example.com",
+    "at": 1777861486218
+  },
+  {
+    "id": "0b734d41-7b30-4a85-82f0-94aad3be219b",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "type": "INTERVENTION",
+    "detail": {
+      "intent": "REPLAY_ACTION",
+      "diff": {
+        "replayed": {
+          "kind": "score",
+          "candidateId": "c07"
+        }
+      }
+    },
+    "operator": "ops@smaya.example.com",
+    "at": 1777861486218
+  },
+  {
+    "id": "afeee2b4-94f2-42c9-894c-468155f5ff98",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "type": "INTERVENTION",
+    "detail": {
+      "intent": "OVERRIDE_DECISION",
+      "kind": "reject_candidate",
+      "candidateId": "c04",
+      "rationale": "Not a fit for this round."
+    },
+    "operator": "ops@smaya.example.com",
+    "at": 1777861490725
+  },
+  {
+    "id": "eee4a68d-840c-47c6-b18e-f88af41627e1",
+    "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+    "tenantId": "default",
+    "type": "INTERVENTION",
+    "detail": {
+      "intent": "OVERRIDE_DECISION",
+      "diff": {
+        "rejected": "c04"
+      }
+    },
+    "operator": "ops@smaya.example.com",
+    "at": 1777861490726
+  }
+]

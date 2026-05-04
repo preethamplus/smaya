@@ -1,0 +1,610 @@
+[
+  {
+    "id": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mission.run",
+    "attrs": {
+      "runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "tenantId": "default"
+    },
+    "startedAt": 1777861475479,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476347
+  },
+  {
+    "id": "5ed5078e-162b-4ce5-88a8-05c58469a458",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.resume-parser",
+    "attrs": {
+      "mcp.tool": "resume-parser",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:resume-parser:4519de72eee933f6",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861475485,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861475979
+  },
+  {
+    "id": "bb1041ed-bd4e-49d1-93f9-d6b6e005b5a3",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.resume-parser",
+    "attrs": {
+      "mcp.tool": "resume-parser",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:resume-parser:65d96862b98f9cba",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861475979,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861475989
+  },
+  {
+    "id": "f65a2196-c67b-4f9d-b3ba-8900e88c62dc",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.resume-parser",
+    "attrs": {
+      "mcp.tool": "resume-parser",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:resume-parser:077caac6bfbd22ac",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861475989,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861475997
+  },
+  {
+    "id": "0eb825a1-3bab-4903-94bc-f511820b67ce",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.resume-parser",
+    "attrs": {
+      "mcp.tool": "resume-parser",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:resume-parser:0dfaabf1b2807d50",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861475997,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476004
+  },
+  {
+    "id": "ab9534aa-9e52-4831-8075-68dd8de6c903",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.resume-parser",
+    "attrs": {
+      "mcp.tool": "resume-parser",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:resume-parser:7971d21d46e21222",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861476005,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476012
+  },
+  {
+    "id": "a750b880-4750-46cd-a00d-d1c0e148bffc",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.resume-parser",
+    "attrs": {
+      "mcp.tool": "resume-parser",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:resume-parser:42f7b5bdac555c9e",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861476012,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476018
+  },
+  {
+    "id": "6b8187dc-df23-400b-8a6d-34cc07bd601b",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.resume-parser",
+    "attrs": {
+      "mcp.tool": "resume-parser",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:resume-parser:5f5e90b9eb43adec",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861476018,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476024
+  },
+  {
+    "id": "9afe2c65-6a64-4839-b32b-b1936b684246",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.resume-parser",
+    "attrs": {
+      "mcp.tool": "resume-parser",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:resume-parser:c995ae9efb9b10c1",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861476025,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476032
+  },
+  {
+    "id": "2beff8df-9647-4e83-a9e6-0999fc871494",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.resume-parser",
+    "attrs": {
+      "mcp.tool": "resume-parser",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:resume-parser:9a13f1564d99f20e",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861476032,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476040
+  },
+  {
+    "id": "0aa36b60-a25b-47a6-99b6-cf91805d7fef",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.resume-parser",
+    "attrs": {
+      "mcp.tool": "resume-parser",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:resume-parser:9cab269ba3b772c0",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861476041,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476047
+  },
+  {
+    "id": "f32984c5-b53e-4c9a-9997-40fccd726e9b",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.voice-call",
+    "attrs": {
+      "mcp.tool": "voice-call",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:voice-call:a5253e4f58965398",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861476139,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476139
+  },
+  {
+    "id": "f40fa69c-05cf-4eae-ae81-f1cdfc3fb65e",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.voice-call",
+    "attrs": {
+      "mcp.tool": "voice-call",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:voice-call:356ab9893741693e",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861476139,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476139
+  },
+  {
+    "id": "c8b722b6-b5bb-41fa-8b5a-1617e5d35884",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.voice-call",
+    "attrs": {
+      "mcp.tool": "voice-call",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:voice-call:1d58b5fe0db9d306",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861476139,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476139
+  },
+  {
+    "id": "4eab637e-d202-4b93-95dc-f4328a14f483",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.voice-call",
+    "attrs": {
+      "mcp.tool": "voice-call",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:voice-call:f9ef8439fc3f1a33",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861476152,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476153
+  },
+  {
+    "id": "b1ec91aa-6ba2-4f47-96b4-7bb353afc529",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.voice-call",
+    "attrs": {
+      "mcp.tool": "voice-call",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:voice-call:f294260f8bdc2e91",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861476153,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476153
+  },
+  {
+    "id": "ac1cc3ec-b876-439d-b982-2511d614bd09",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.voice-call",
+    "attrs": {
+      "mcp.tool": "voice-call",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:voice-call:bef2c2acdbeea640",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861476153,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476153
+  },
+  {
+    "id": "6e617aa1-9cc9-4a15-924c-dea9c43e0473",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.voice-call",
+    "attrs": {
+      "mcp.tool": "voice-call",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:voice-call:26c7fe62da4c0d67",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861476153,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476153
+  },
+  {
+    "id": "98bfdfcd-2f74-4769-84b3-2087c86f9242",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.voice-call",
+    "attrs": {
+      "mcp.tool": "voice-call",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:voice-call:d5ccb4c2fb005d05",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861476153,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476153
+  },
+  {
+    "id": "b3c54c63-91c8-45b2-b19b-38b635e91679",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.voice-call",
+    "attrs": {
+      "mcp.tool": "voice-call",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:voice-call:b71e474d52b8cd9f",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861476153,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476153
+  },
+  {
+    "id": "c4678874-534c-4838-bb33-2a3d94d9960e",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.voice-call",
+    "attrs": {
+      "mcp.tool": "voice-call",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:voice-call:6bc8a52c1578c231",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861476153,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476153
+  },
+  {
+    "id": "c58d48ef-7397-4124-918e-af9324ee5c98",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.voice-call",
+    "attrs": {
+      "mcp.tool": "voice-call",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:voice-call:8ad206ee8dcf9861",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861476169,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476169
+  },
+  {
+    "id": "c188c55d-ff23-4fd6-bc90-accd7670c180",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.voice-call",
+    "attrs": {
+      "mcp.tool": "voice-call",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:voice-call:fdc0c11fd9a6764b",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861476169,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476169
+  },
+  {
+    "id": "a76def39-91d6-4271-9259-f6378d85f087",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.avatar-interview",
+    "attrs": {
+      "mcp.tool": "avatar-interview",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:avatar-interview:45e201f9929d58b1",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861476171,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476171
+  },
+  {
+    "id": "6df46f98-f701-4a4f-8d15-4fc58bcc3ac1",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.avatar-interview",
+    "attrs": {
+      "mcp.tool": "avatar-interview",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:avatar-interview:380f08133ceec401",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861476171,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476171
+  },
+  {
+    "id": "a185dfe7-5faa-476e-a2e6-55999bdbf25c",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.avatar-interview",
+    "attrs": {
+      "mcp.tool": "avatar-interview",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:avatar-interview:4cc062776fe8fcfc",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861476171,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476172
+  },
+  {
+    "id": "4d7d19bc-f766-4e12-bee9-29edd0afe2dc",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.avatar-interview",
+    "attrs": {
+      "mcp.tool": "avatar-interview",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:avatar-interview:927ec7afda9713c4",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861476172,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476172
+  },
+  {
+    "id": "f04c19ba-83b6-4ced-9568-039d78b86e71",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.avatar-interview",
+    "attrs": {
+      "mcp.tool": "avatar-interview",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:avatar-interview:d8020b344628ad15",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861476172,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476172
+  },
+  {
+    "id": "58f9eeb7-22da-49dc-a586-a3a32f8acb4f",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.avatar-interview",
+    "attrs": {
+      "mcp.tool": "avatar-interview",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:avatar-interview:ce40ef0457c27eda",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861476172,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476172
+  },
+  {
+    "id": "347530f8-b858-4f66-b785-0c2df3fa5131",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.avatar-interview",
+    "attrs": {
+      "mcp.tool": "avatar-interview",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:avatar-interview:3196d1524651693c",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861476172,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476172
+  },
+  {
+    "id": "6fe56729-2339-447d-91b8-e774b6841079",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.avatar-interview",
+    "attrs": {
+      "mcp.tool": "avatar-interview",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:avatar-interview:f4f2e78767a7b8e4",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861476172,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476172
+  },
+  {
+    "id": "f7c46d5b-bac2-46fc-943f-3b992f83c216",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.avatar-interview",
+    "attrs": {
+      "mcp.tool": "avatar-interview",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:avatar-interview:15a209a29ff70739",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861476172,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476172
+  },
+  {
+    "id": "43a99399-671e-47a8-ab55-a7115a4ba165",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.avatar-interview",
+    "attrs": {
+      "mcp.tool": "avatar-interview",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:avatar-interview:47e03a94771a4609",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861476173,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476173
+  },
+  {
+    "id": "f6dd4137-a3e8-4a6d-ac6f-5a512d63ab1a",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.slack-poster",
+    "attrs": {
+      "mcp.tool": "slack-poster",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:slack-poster:6ff7af3bee8d52ae",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861476174,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476219
+  },
+  {
+    "id": "a57f9c5a-5470-429c-a2a0-471e8b774ae7",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.outlook-scheduler",
+    "attrs": {
+      "mcp.tool": "outlook-scheduler",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:outlook-scheduler:40b736f50511f58e",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861476220,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476228
+  },
+  {
+    "id": "7bbd9adb-efac-43ef-85ca-7fae0798a523",
+    "parentId": "71a58db0-3f49-4229-a2d6-0aea3d80604e",
+    "traceId": "ffffb153-8da4-4617-ad41-0c2b5e7b9291",
+    "name": "mcp.outlook-scheduler",
+    "attrs": {
+      "mcp.tool": "outlook-scheduler",
+      "smaya.runId": "37ba0e34-50d5-4ff8-992b-9e5dce731f66",
+      "smaya.tenantId": "default",
+      "mcp.idempotency_key": "mcp:outlook-scheduler:599f4e4f81fcf7a3",
+      "mcp.replayed": false
+    },
+    "startedAt": 1777861476341,
+    "events": [],
+    "status": "OK",
+    "endedAt": 1777861476346
+  }
+]

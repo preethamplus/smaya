@@ -12,6 +12,7 @@ coverage/
 Thumbs.db
 .vscode/
 .idea/
-artifacts/runs/
+artifacts/runs/*
+!artifacts/runs/sample/
 .cosmos-emulator/
 .redis-data/

@@ -148,11 +148,11 @@ export class CosmosStore implements Store {
   }> {
     if (!this.clientPromise) {
       this.clientPromise = (async () => {
+        // @ts-expect-error optional runtime dependency
         const sdk = await import("@azure/cosmos").catch(() => null);
         if (!sdk) throw new Error("@azure/cosmos not installed; SMAYA_COSMOS=1 requires it");
         const endpoint = process.env.COSMOS_ENDPOINT ?? "https://localhost:8081";
         const key = process.env.COSMOS_KEY ?? "C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==";
-        // @ts-expect-error CosmosClient is a class
         return new sdk.CosmosClient({ endpoint, key });
       })();
     }

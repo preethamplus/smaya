@@ -1,8 +1,10 @@
 import type { CandidateId, InterventionIntent, MissionStage } from "@smaya/shared/schemas";
 import { repos } from "@smaya/data";
-import { getLiveMission, listLiveMissions, bus, listPendingGates, approveGate, rejectGate } from "@smaya/orchestrator";
+import { Mission, getLiveMission, listLiveMissions, bus, listPendingGates, approveGate, rejectGate, registerLiveMission } from "@smaya/orchestrator";
 import { getOutlookEmails, getOutlookEvents, getSlackMessages } from "@smaya/mcp-tools/mock-servers";
+import { setCompressFactor } from "@smaya/shared/time";
 import { randomUUID } from "node:crypto";
+import { resolve } from "node:path";
 import { validateIntervention } from "./allowlist.js";
 
 export const resolvers = {
@@ -45,6 +47,35 @@ export const resolvers = {
       if (gate !== "GATE_1" && gate !== "GATE_2") throw new Error("invalid gate");
       await rejectGate(runId, m.run.tenantId, gate, operator, reason);
       return true;
+    },
+    startMission: async (
+      _: unknown,
+      args: { tenantId?: string; jdId?: string; topN?: number; budgetUsd?: number; compressFactor?: number },
+    ) => {
+      if (args.compressFactor && args.compressFactor > 0) setCompressFactor(args.compressFactor);
+      const tenantId = args.tenantId ?? "default";
+      const m = new Mission({
+        tenantId,
+        goal: { topN: args.topN ?? 3, jdId: args.jdId ?? "smaya-senior-backend-2026", excludedCandidates: [], skipStages: [] },
+        resumesDir: resolve(process.cwd(), "fixtures/resumes/pdf"),
+        budgetUsd: args.budgetUsd ?? 5.0,
+      });
+      registerLiveMission(m);
+      // Run async — the resolver returns immediately so the caller sees the
+      // RunRecord. The mission progresses on its own and emits bus events.
+      void m.run_().catch((err) => {
+        console.error(`[mission ${m.run.id}] failed:`, err);
+      });
+      const s = m.status();
+      return {
+        runId: m.run.id,
+        stage: s.stage,
+        status: s.status,
+        costUsd: s.costUsd,
+        etaSec: s.etaSec,
+        goal: m.run.goal,
+        pendingGates: [],
+      };
     },
     interveneRun: async (
       _: unknown,
