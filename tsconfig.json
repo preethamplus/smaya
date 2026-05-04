@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.base.json",
+  "files": [],
+  "references": [
+    { "path": "packages/shared" },
+    { "path": "packages/data" },
+    { "path": "packages/mcp-tools" },
+    { "path": "packages/evals" },
+    { "path": "packages/orchestrator" },
+    { "path": "packages/intervention-api" }
+  ]
+}

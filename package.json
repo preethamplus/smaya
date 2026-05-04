@@ -1,0 +1,27 @@
+{
+  "name": "smaya",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Smaya — autonomous AI recruiting agent (Smaya Assessment v5.0)",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "dev": "node scripts/dev.mjs",
+    "mission:run": "npm run mission:run -w @smaya/orchestrator",
+    "evals:run": "npm run evals:run -w @smaya/evals",
+    "ui:dev": "npm run dev -w @smaya/ui",
+    "api:dev": "npm run dev -w @smaya/intervention-api"
+  },
+  "devDependencies": {
+    "typescript": "5.5.4",
+    "tsx": "4.19.0",
+    "@types/node": "20.14.10",
+    "vitest": "2.0.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

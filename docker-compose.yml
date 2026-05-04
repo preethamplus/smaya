@@ -1,0 +1,40 @@
+# Smaya local infra. Optional — the system also boots with --in-memory shims.
+# Usage:  docker compose up -d
+services:
+  cosmos:
+    image: mcr.microsoft.com/cosmosdb/linux/azure-cosmos-emulator:latest
+    container_name: smaya-cosmos
+    tty: true
+    restart: unless-stopped
+    mem_limit: 3g
+    cpu_count: 2
+    environment:
+      - AZURE_COSMOS_EMULATOR_PARTITION_COUNT=4
+      - AZURE_COSMOS_EMULATOR_ENABLE_DATA_PERSISTENCE=true
+      - AZURE_COSMOS_EMULATOR_IP_ADDRESS_OVERRIDE=127.0.0.1
+    ports:
+      - "8081:8081"
+      - "10250-10255:10250-10255"
+    volumes:
+      - ./.cosmos-emulator:/tmp/cosmos/appdata
+
+  redis:
+    image: redis:7-alpine
+    container_name: smaya-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./.redis-data:/data
+    command: ["redis-server", "--appendonly", "yes"]
+
+  jaeger:
+    image: jaegertracing/all-in-one:1.58
+    container_name: smaya-jaeger
+    restart: unless-stopped
+    environment:
+      - COLLECTOR_OTLP_ENABLED=true
+    ports:
+      - "16686:16686"   # UI
+      - "4317:4317"     # OTLP gRPC
+      - "4318:4318"     # OTLP HTTP
